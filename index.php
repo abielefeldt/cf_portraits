@@ -31,7 +31,7 @@ define('OFFSET_EVEN', OFFSET_L + GAP + (SQ_W / 2));
 define('HEX_HEIGHT', 2 * CAP_H + SQ_H);
 define('VERTICAL_GAP', GAP * sqrt(3) / 2);
 
-$imgs = glob('../img/*.png');
+$imgs = glob('img/*.png');
 
 $output = '';
 for($row = 1; $row <= GRID_H; $row++) {
@@ -39,9 +39,9 @@ for($row = 1; $row <= GRID_H; $row++) {
 
     $item_number = ($row - 1) * GRID_W + $col;
     // placeholder file
-    $file = '../img/enkidu.png';
+    $file = 'img/enkidu.png';
     foreach($imgs as $img) {
-      if(str_starts_with($img, "../img/{$item_number}_")) {
+      if(str_starts_with($img, "img/{$item_number}_")) {
         $file = $img;
         break;
       }
@@ -90,7 +90,7 @@ function points() {
       }
     </style>
   </head>
-  <body style="color: white; background-color: <?php echo BG_COLOR ?>; background-image: url('../img/bg.png'); background-position-x: right;">
+  <body style="color: white; background-color: <?php echo BG_COLOR ?>; background-image: url('img/bg.png'); background-position-x: right;">
     <?php echo $output ?>
   </body>
 </html>
