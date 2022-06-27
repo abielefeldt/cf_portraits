@@ -3,6 +3,7 @@
 // grid dimensions by number of items per row/col
 const GRID_H = 4;
 const GRID_W = 7;
+const VIEWPORT_W = 1920;
 
 // body background
 const BG_COLOR = '#8af';
@@ -26,6 +27,7 @@ require("constants-" . GRID_H . "-" . GRID_W . ".php");
  */
 
 // calculated constants
+define('OFFSET_L', (VIEWPORT_W - ((GAP + SQ_W) * GRID_W + ((SQ_W + GAP) / 2))) / 2);
 define('OFFSET_ODD', OFFSET_L + (GAP / 2));
 define('OFFSET_EVEN', OFFSET_L + GAP + (SQ_W / 2));
 define('HEX_HEIGHT', 2 * CAP_H + SQ_H);

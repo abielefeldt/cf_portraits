@@ -8,8 +8,7 @@
 const CAP_H = 160;
 const SQ_H = 0;
 const SQ_W = 240;
-const GAP = 14;
-const OFFSET_L = 7;
+const GAP = 16;
 const OFFSET_T = 64;
 
 // background-image resize/"fill" method
