@@ -10,7 +10,7 @@ const BG_COLOR = '#8af';
 
 // include constants based on grid dimensions
 // -- distinct files will be needed
-require("constants-" . GRID_H . "-" . GRID_W . ".php");
+require "constants-" . GRID_H . "-" . GRID_W . ".php";
 
 /**
  * Available constants (unit: pixels):
@@ -71,9 +71,9 @@ function points() {
   $path = [];
   $path[] = SQ_W / 2 . 'px 0';
   $path[] = SQ_W . 'px ' . CAP_H . 'px';
-  $path[] = SQ_W . 'px ' . CAP_H + SQ_H . 'px';
+  $path[] = SQ_W . 'px ' . (CAP_H + SQ_H) . 'px';
   $path[] = SQ_W / 2 . 'px ' . HEX_HEIGHT . 'px';
-  $path[] = '0 ' . CAP_H + SQ_H . 'px';
+  $path[] = '0 ' . (CAP_H + SQ_H) . 'px';
   $path[] = '0 ' . CAP_H . 'px';
   return implode(', ', $path);
 }
