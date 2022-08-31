@@ -34,20 +34,16 @@ define('HEX_HEIGHT', 2 * CAP_H + SQ_H);
 define('VERTICAL_GAP', GAP * sqrt(3) / 2);
 
 $imgs = glob('img/*.png');
+natsort($imgs);
+
+$total_num_items = GRID_H * GRID_W;
 
 $output = '';
 for($row = 1; $row <= GRID_H; $row++) {
   for($col = 1; $col <= GRID_W; $col++) {
 
     $item_number = ($row - 1) * GRID_W + $col;
-    // placeholder file
-    $file = 'img/enkidu.png';
-    foreach($imgs as $img) {
-      if(str_starts_with($img, "img/{$item_number}_")) {
-        $file = $img;
-        break;
-      }
-    }
+    $file = $imgs[$item_number - 1] ?? 'img/enkidu.png';
 
     // define top-left corner of item
     if($row % 2 == 1) {
