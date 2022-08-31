@@ -2,7 +2,7 @@
 
 // grid dimensions by number of items per row/col
 const GRID_H = 4;
-const GRID_W = 7;
+const GRID_W = 6;
 const VIEWPORT_W = 1920;
 
 // body background
