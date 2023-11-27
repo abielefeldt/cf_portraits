@@ -74,7 +74,6 @@ function points() {
   return implode(', ', $path);
 }
 ?>
-
 <html>
   <head>
     <style>
