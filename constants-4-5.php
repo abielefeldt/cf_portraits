@@ -19,8 +19,8 @@ const ITEM_RESIZE = 'cover';
 const ITEM_POSITION = 'center';
 
 const PEOPLE = [
-  ['AriaA', 'TsuwA', 'EvelH', 'FyraF', 'CaesL'],
-  ['RexxA', 'MinaC', 'HiroM', 'PettT', 'InneL'],
+  ['AriaA', 'YangX', 'EvelH', 'FyraF', 'CaesL'],
+  ['TsuwA', 'MinaC', 'HiroM', 'PettT', 'InneL'],
   ['DyrmT', 'AkiiS', 'Mai_P', 'TishB', 'Rin_S'],
   ['HinnL', 'PierT', 'AnaiM', 'ZashZ', 'FaieN']
 ];
