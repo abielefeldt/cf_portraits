@@ -17,3 +17,11 @@ const ITEM_RESIZE = 'cover';
 
 // 'center' or 'top'
 const ITEM_POSITION = 'center -18px';
+
+const PEOPLE = [
+  ['AriaA', 'YangX', 'EvelH', 'FyraF', 'CaesL', '_Enki', '_Enki'],
+  ['TsuwA', 'MinaC', 'HiroM', 'PettT', 'InneL', '_Enki', '_Enki'],
+  ['DyrmT', 'AkiiS', 'Mai_P', 'TishB', 'Rin_S', '_Enki', '_Enki'],
+  ['HinnL', 'PierT', 'AnaiM', 'ZashZ', 'FaieN', '_Enki', '_Enki'],
+  ['_Enki', '_Enki', '_Enki', '_Enki', '_Enki', '_Enki', '_Enki']
+];
