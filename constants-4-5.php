@@ -22,5 +22,5 @@ const PEOPLE = [
   ['AriaA', 'YangX', 'EvelH', 'FyraF', 'CaesL'],
   ['TsuwA', 'MinaC', 'HiroM', 'PettT', 'InneL'],
   ['DyrmT', 'AkiiS', 'Mai_P', 'TishB', 'Rin_S'],
-  ['HinnL', 'PierT', 'AnaiM', 'ZashZ', 'FaieN']
+  ['HinnL', 'PierT', 'AnaiM', 'BlaiR', 'FaieN']
 ];
